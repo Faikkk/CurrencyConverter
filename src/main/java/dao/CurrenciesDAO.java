@@ -1,14 +1,14 @@
 package dao;
 
-import model.Currencies;
+import model.CurrenciesDTO;
 
 import java.util.List;
 
 public interface CurrenciesDAO {
     // define CRUD operations
-    public void addCurrency (int id);
-    public void deleteCurrency (int id);
-    public void updateUser (Currencies currency);
-    public List<Currencies> getAllCurrencies();
-    public Currencies getCurrencyById (int id);
+     void addCurrency (String code, String fullName, String sign);
+     void deleteCurrency (String code);
+     void updateCurrency (CurrenciesDTO currency);
+     List<CurrenciesDTO> getAllCurrencies();
+     CurrenciesDTO getCurrencyByCode (String code);
 }

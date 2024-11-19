@@ -1,15 +1,15 @@
 package model;
 
-public class ExchangeRates {
+public class ExchangeRatesDTO {
     private int id;
     private int BaseCurrencyId;
     private int TargetCurrencyId;
-    private long Rate;
+    private double Rate;
 
-    public ExchangeRates() {
+    public ExchangeRatesDTO() {
     }
 
-    public ExchangeRates(int baseCurrencyId, int targetCurrencyId, long rate) {
+    public ExchangeRatesDTO(int baseCurrencyId, int targetCurrencyId, double rate) {
         BaseCurrencyId = baseCurrencyId;
         TargetCurrencyId = targetCurrencyId;
         Rate = rate;
@@ -39,11 +39,11 @@ public class ExchangeRates {
         TargetCurrencyId = targetCurrencyId;
     }
 
-    public long getRate() {
+    public double getRate() {
         return Rate;
     }
 
-    public void setRate(long rate) {
+    public void setRate(double rate) {
         Rate = rate;
     }
 

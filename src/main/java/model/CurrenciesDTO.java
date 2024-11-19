@@ -1,15 +1,15 @@
 package model;
 
-public class Currencies {
+public class CurrenciesDTO {
     private int id;
     private String code;
     private String fullName;
     private String sign;
 
-    public Currencies() {
+    public CurrenciesDTO() {
     }
 
-    public Currencies(String code, String fullName, String sign) {
+    public CurrenciesDTO(String code, String fullName, String sign) {
         this.code = code;
         this.fullName = fullName;
         this.sign = sign;
@@ -49,7 +49,8 @@ public class Currencies {
 
     @Override
     public String toString() {
-        return "Currencies{" +
+        return "Currencies" +
+                '{' +
                 "id=" + id +
                 ", code='" + code + '\'' +
                 ", fullName='" + fullName + '\'' +
